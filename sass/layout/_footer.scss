@@ -5,18 +5,14 @@
     display: flex;
 
     &__container {
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-    }
+        text-align: center;
 
-    &__adress {
-        margin-right: 70px;
     }
 }
 
 .adress-list {
     padding-top: 20px;
+    padding-bottom: 60px;
 
     &__link {
         color: var(--white-color);
@@ -37,26 +33,23 @@
     color: rgba(255, 255, 255, 0.6);
 }
 
-.joing {
-    margin-bottom: 12px;
-    margin-right: 93px;
-
-    &__title {
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 16px;
-        letter-spacing: 0.03em;
-        text-transform: uppercase;
-        color: #FFFFFF;
-        margin-bottom: 20px;
-    }
+.joing__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 20px;
 }
+
 
 .joing-social-list {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     column-gap: 10px;
+    padding-bottom: 60px;
 
     &__link {
         width: 44px;
@@ -93,19 +86,17 @@
 }
 
 .subscribe-form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 12px;
+    text-align: center;
 
     &__input {
-        width: 358px;
+        width: 100%;
         height: 50px;
         border: 1px solid rgba(255, 255, 255, 0.3);
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
         border-radius: 4px;
         background-color: #2F303A;
         padding-left: 16px;
+        margin-bottom: 20px;
         
         &:hover,
         &:focus {
@@ -139,4 +130,80 @@
 
 .button-icon {
     fill: var(--white-color);
+}
+
+@media screen and (min-width: 768px) {
+
+    .footer-tablet_container {
+        display: flex;
+        justify-content: space-around;
+        text-align: start;
+    }
+
+    .joing {
+        margin-top: 5px;
+
+        &__title {
+            text-align: center;
+        }
+    }
+
+    .subscribe-form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        &__input {
+            width: 450px;
+        }
+
+        &__button {
+            width: 200px;
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .footer {
+        &__container {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            text-align: start;
+        }
+    
+        &__adress {
+            margin-right: 70px;
+        }
+    }
+
+    .joing {
+        margin-bottom: 12px;
+        margin-right: 93px;
+    }
+
+    .joing-social-list {
+        justify-content: flex-start;
+    }
+
+    .subscribe {
+        margin-bottom: 64px;
+    }
+
+    .subscribe-form {
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+
+        &__input {
+            width: 358px;
+            height: 50px;
+            margin-bottom: 0;
+        }
+
+    }
 }

@@ -43,3 +43,9 @@
     color: var(--white-color);
     padding-top: 27px;
 }
+
+@media screen and (max-width: 1199px) {
+    .doing-section {
+        display: none;
+    }
+}

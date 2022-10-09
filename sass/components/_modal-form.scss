@@ -17,6 +17,7 @@
 .modal-form-input-wrapper {
     position: relative;
     display: block;
+    font-weight: 400;
 }
 
 .modal-form-input {
@@ -69,6 +70,10 @@
 .modal-form-check-wrapper {
     display: flex;
     align-items: center;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    color: #757575;
 }
 
 .modal-form-own-check {
@@ -117,5 +122,16 @@
     &:focus {
         background-color: var(--brand-color);
         color: var(--white-color);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    
+}
+
+@media screen and (min-width: 1200px) {
+    .modal-form-check-wrapper {
+        font-size: 14px;
+        line-height: 1.71;
     }
 }
