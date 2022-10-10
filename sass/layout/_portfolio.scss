@@ -45,7 +45,7 @@
 .project-list-item {
     flex-basis: calc((100% - 60px) / 3);
     transition: box-shadow var(--transition-dur-and-func);
-    width: 354px;
+    width: 100%;
 
     &:hover,
     &:focus {
@@ -99,14 +99,22 @@
 
 @media screen and (min-width: 768px) {
     .filters-list {
-        justify-content: flex-start;
+        justify-content: center;
     }
 
     .projects-list {
         justify-content: flex-start;
     }
+
+    .project-list-item {
+        width: 354px;
+    }
 }
 
 @media screen and (min-width: 1200px) {
-    
+
+
+    .project-list-item {
+        width: 370px;
+    }
 }
