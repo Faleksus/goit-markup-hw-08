@@ -15,6 +15,7 @@
         visibility: hidden;
         pointer-events: none;
         transition: opacity var(--transition-dur-and-func), visibility var(--transition-dur-and-func);
+        overflow: auto;
     }
     
     .mobile-menu.is-open {
