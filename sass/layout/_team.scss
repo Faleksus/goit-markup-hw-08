@@ -82,13 +82,16 @@
 
 @media screen and (min-width: 768px) {
     .team-list-img {
-        width: 270px;
+        width: 354px;
     }
 
 }
 
 @media screen and (min-width: 1200px) {
-
+    .team-list-img {
+        width: 270px;
+    }
+    
     .team-title {
         line-height: 1.17;
         padding-bottom: 50px;
